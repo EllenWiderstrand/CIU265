@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Logo from './images/Logo.png';
 import TopContent from './TopContent';
+import Footer from './Footer';
 
 const Wrapper = styled.div`
     width: 100%;
@@ -25,6 +26,7 @@ function App() {
         <HeaderLogo alt="Logo" src={Logo}></HeaderLogo>
       </Header>
       <TopContent />
+      <Footer />
     </Wrapper>
   );
 }
