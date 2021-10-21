@@ -3,7 +3,7 @@ import Logo from './images/Logo.png';
 import Board from './images/Board.png';
 
 const Wrapper = styled.div`
-  min-height: 100vh;
+  min-height: calc(100vh - 60px);
   background-color: #CDCEE6;
   padding: 0 10%;
   display: grid;
@@ -14,6 +14,7 @@ const Wrapper = styled.div`
 
   @media (max-width: 900px) {
     grid-template-columns: repeat(1, 1fr);
+    padding: 20px 10% 40px 10%;
   }
 `
 

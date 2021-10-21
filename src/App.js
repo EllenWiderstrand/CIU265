@@ -17,6 +17,11 @@ const Header = styled.div`
   z-index: 1;
 `
 
+const BehindHeader = styled.div`
+  width: 100%;
+  height: 60px; 
+`
+
 const HeaderLogo = styled.img`
   height: 30px;
   padding: 15px;
@@ -33,6 +38,7 @@ function App() {
       <Header>
         <HeaderLogo alt="Logo" onClick={() => window.scrollTo(0, 0)} src={Logo}></HeaderLogo>
       </Header>
+      <BehindHeader />
       <TopContent />
       <Information />
       <Footer />
