@@ -3,13 +3,14 @@ import Logo from './images/Logo.png';
 import Board from './images/Board.png';
 
 const Wrapper = styled.div`
-  height: calc(100vh - 60px);
+  min-height: 100vh;
   background-color: #CDCEE6;
   padding: 0 10%;
   display: grid;
   align-content: center;
   align-items: center;
   grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 25px;
 `
 
 const LogoImg = styled.img`
@@ -26,7 +27,7 @@ function TopContent() {
         <div>
             <LogoImg alt="Logo" src={Logo}></LogoImg>
             <p>
-                En liten nice slogan av något slag.
+              A board game created for new students to be able to grasp the experience of Chalmers in a light-hearted manner and have a more fulfilling time during their studies.
             </p>
         </div>
         <BoardImg alt="The board" src={Board} />
