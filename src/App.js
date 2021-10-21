@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Logo from './images/Logo.png';
 import TopContent from './TopContent';
 import Footer from './Footer';
+import Information from './Information';
 
 const Wrapper = styled.div`
   width: 100%;
@@ -33,6 +34,7 @@ function App() {
         <HeaderLogo alt="Logo" onClick={() => window.scrollTo(0, 0)} src={Logo}></HeaderLogo>
       </Header>
       <TopContent />
+      <Information />
       <Footer />
     </Wrapper>
   );
