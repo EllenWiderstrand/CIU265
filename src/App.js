@@ -4,26 +4,33 @@ import TopContent from './TopContent';
 import Footer from './Footer';
 
 const Wrapper = styled.div`
-    width: 100%;
-    min-height: 100vh;
+  width: 100%;
+  min-height: 100vh;
 `;
 
 const Header = styled.div`
-    width: 100%;
-    height: 60px;
-    background-color: #CDCEE6;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: #000000;
+  z-index: 1;
 `
 
 const HeaderLogo = styled.img`
   height: 30px;
   padding: 15px;
+  filter: invert(1);
+
+  &:hover {
+    cursor: pointer;
+  }
 `
 
 function App() {
   return (
     <Wrapper>
       <Header>
-        <HeaderLogo alt="Logo" src={Logo}></HeaderLogo>
+        <HeaderLogo alt="Logo" onClick={() => window.scrollTo(0, 0)} src={Logo}></HeaderLogo>
       </Header>
       <TopContent />
       <Footer />
