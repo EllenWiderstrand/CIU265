@@ -58,7 +58,7 @@ const CardInfo = styled.div`
 function Information() {
   return (
     <Wrapper>
-        <PlayersIcon />
+        <PlayersIcon width="100%"/>
         <p>The game is intended for 3-6 players.</p>
         <RulesImg alt="The rules of the game." src={Rules}/>
         <CardInfo>
