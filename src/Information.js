@@ -59,7 +59,7 @@ function Information() {
   return (
     <Wrapper>
         <PlayersIcon width="100%"/>
-        <p>The game is intended for 3-6 players.</p>
+        <p>The game is intended for 3-6 players, but optimal for 4 players.</p>
         <RulesImg alt="The rules of the game." src={Rules}/>
         <CardInfo>
             <p>Learn about events, traditions and happenings at Chalmers.</p>
