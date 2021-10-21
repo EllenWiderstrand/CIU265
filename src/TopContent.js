@@ -11,6 +11,10 @@ const Wrapper = styled.div`
   align-items: center;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 25px;
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `
 
 const LogoImg = styled.img`
@@ -24,13 +28,13 @@ const BoardImg = styled.img`
 function TopContent() {
   return (
     <Wrapper>
-        <div>
-            <LogoImg alt="Logo" src={Logo}></LogoImg>
-            <p>
-              A board game created for new students to be able to grasp the experience of Chalmers in a light-hearted manner and have a more fulfilling time during their studies.
-            </p>
-        </div>
-        <BoardImg alt="The board" src={Board} />
+      <div>
+        <LogoImg alt="Logo" src={Logo}></LogoImg>
+          <p>
+            A board game created for new students to be able to grasp the experience of Chalmers in a light-hearted manner and have a more fulfilling time during their studies.
+          </p>
+      </div>
+      <BoardImg alt="The board" src={Board} />
     </Wrapper>
   );
 }

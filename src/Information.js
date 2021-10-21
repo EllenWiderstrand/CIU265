@@ -24,16 +24,29 @@ const Wrapper = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 50px;
   grid-row-gap: 40px;
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `
 
 const RulesImg = styled.img`
   grid-column: span 2;
   width: 100%;
+
+  @media (max-width: 900px) {
+    grid-column: span 1;
+  }
 `
 
 const InfoImg = styled.img`
   width: auto;
   max-height: 500px;
+
+  @media (max-width: 400px) {
+    max-height: unset;
+    width: 100%;
+  }
 `
 
 const CardInfo = styled.div`
